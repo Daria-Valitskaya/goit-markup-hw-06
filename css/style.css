@@ -169,7 +169,8 @@ img {
 .navigation,
 .portfolio-button,
 .order-button,
-.modal-btn {
+.modal-btn,
+.follow-btn {
   cursor: pointer;
   border: none;
 }
@@ -201,11 +202,9 @@ img {
 .contacts {
   display: flex;
   align-items: center;
-}
-
-.contacts {
   margin-left: auto;
 }
+
 .contacts-item:not(:first-child) {
   margin-left: 50px;
 }
@@ -264,6 +263,7 @@ img {
 
 .follow-footer {
   width: 206px;
+  margin-right: 90px;
 }
 
 .follow-footer > .social-link-list {
@@ -281,11 +281,52 @@ img {
   border-radius: 50%;
 }
 
-/* .follow-footer .social-link-link:hover,
-.follow-footer .social-link-link:focus {
-  background-color: var(--focus-color);
-} */
+.follow-form-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.follow-mail {
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 360px;
+  height: 50px;
+  color: var(--button-text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--dark-background-color);
+}
 
+.follow-mail:focus {
+  outline: none;
+}
+
+.follow-mail::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.follow-btn {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--button-text-color);
+  background-color: var(--focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
 /*=======studio======*/
 /*=======hero=======*/
 
@@ -353,7 +394,9 @@ img {
 .order-button:hover,
 .order-button:focus,
 .modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:focus,
+.follow-btn:hover,
+.follow-btn:focus {
   background-color: var(--order-button-color);
 }
 
